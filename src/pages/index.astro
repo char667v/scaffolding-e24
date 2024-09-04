@@ -5,8 +5,41 @@ import Link from '../components/Link.astro';
 ---
 <MainLayout title="Titel">
 	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
+		<div class="pb-6 max-w-xl mx-auto">
+		<h1>Index overskrift</h1></div>
+
+		<div class="pb-6 max-w-xl mx-auto">
+		<Button>Klik!</Button></div>
+
+		<div class="pb-6 max-w-xl mx-auto">
+		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p></div>
+
 	</article>
+	<hr>
+		<h2 class="pb-6 max-w-xl mx-auto text-2xl font-semibold uppercase">Links</h2>
+		<h3 class="pb-6 max-w-xl mx-auto text-xl font-semibold uppercase">Tekst link</h3>
+		<div class="pb-6 max-w-xl mx-auto"><p>Link til <Link href="https://www.kea.dk" target="_blank" variant="textlink" size="standard"></p>
+		<h3 class="pb-6 max-w-xl mx-auto text-xl font-semibold uppercase">Knap link</h3>
+	<hr>
+		<div class="pb-6 max-w-xl mx-auto">
+            <p>Link til<Link href="https://kea.dk/" target="_blank" variant="primary" size="large"> En anden side</Link></p>
+        </div>
+		<div class="pb-6 max-w-xl mx-auto">
+            <p>Link til<Link href="https://kea.dk/" target="_blank" variant="primary" size="medium"> En anden side</Link></p>
+        </div>
+		<div class="pb-6 max-w-xl mx-auto">
+            <p>Link til<Link href="https://kea.dk/" target="_blank" variant="primary" size="small"> En anden side</Link></p>
+        </div>
+	<hr>
+		<div class="pb-6 max-w-xl mx-auto">
+            <p>Link til<Link href="https://kea.dk/" target="_blank" variant="secondary" size="large"> En anden side</Link></p>
+        </div>
+		<div class="pb-6 max-w-xl mx-auto">
+            <p>Link til<Link href="https://kea.dk/" target="_blank" variant="secondary" size="medium"> En anden side</Link></p>
+        </div>
+		<div class="pb-6 max-w-xl mx-auto">
+            <p>Link til<Link href="https://kea.dk/" target="_blank" variant="secondary" size="small"> En anden side</Link></p>
+        </div>
+	</article>
+	
 </MainLayout>
