@@ -3,5 +3,53 @@
 @tailwind utilities;
 
 @layer base{
+/* Base styling for all buttons */
+.btn {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+/* Variants */
+.btn.primary {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.btn.primary:hover {
+    background-color: black;
+    color: white;
+}
+
+.btn.secondary {
+    background-color: lightgray;
+    color: black;
+    border: 1px solid black;
+}
+
+.btn.secondary:hover {
+    background-color: darkgray;
+    color: white;
+}
+
+/* Sizes */
+.btn.small {
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+.btn.medium {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.btn.large {
+    padding: 14px 28px;
+    font-size: 18px;
+}
 
 }
